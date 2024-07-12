@@ -1,0 +1,213 @@
+/* base styles */
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body{
+    font-family: 'Roboto',sans-serif;
+    color: #fff;
+    height: 100vh;
+}
+/* header */
+
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.links{
+    list-style: none;
+    display: flex;
+}
+.link{
+    text-decoration:none;
+    color: rgba(30, 30, 30, 0.5);
+    font-weight: 500px;
+    font-size: 14px;
+    transition: all 0.4s;
+
+}
+
+.link:hover {
+    color: rgba(175, 62, 51, 1);  
+}
+
+.link-item{
+    margin-right: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* MAIN */
+
+.main{
+    text-align: center;
+}
+
+.top{
+    font-size: 20px;
+    color: #1e1e1e;
+    margin-bottom: 5px;
+}
+
+.subtop{
+    font-size: 14px;
+    color: #1e1e1e;
+}
+
+.content{
+    font-size: 17px;
+    color: #1e1e1e;
+    text-align: left;
+    margin-left: 50px;
+    
+}
+
+.tent{
+    color: #1e1e1e; 
+    display: flex;
+    align-items: flex-start; /* Align items at the top */
+    justify-content: center; /* Center content horizontally */
+    margin-top: 20px;
+}
+.left-side, .right-side {
+    flex: 1; /* Take up equal space */
+    padding: 0 20px; /* Add padding to maintain space around content */
+}
+.left-side{
+    flex: 1;
+    padding-right: 20px; /* Adjust spacing */
+    border-right: 2px solid #ccc; /* Vertical border */
+}
+
+.left-content{
+    margin-left: 100px; /* Adjust margin as needed */
+
+}
+
+.right-side{
+    flex-shrink: 0;
+    padding-left: 20px;
+
+}
+
+.right-content{
+    margin-left: 20px; /* Adjust margin as needed */
+}
+
+.head{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+ul {
+    margin-left: 20px;
+    padding-left: 10px;
+}
+
+li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.head-A{
+    margin-left: -490px;
+    padding-left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.health-safety ul {
+    margin-left: -50px; /* Reset margin for ul */
+    padding-left: -30px; /* Reset padding for ul */
+}
+
+.health-safety li {
+    margin-left: -20px; /* Reset margin for li */
+    padding-left: 20px; /* Adjust padding for li */
+}
+
+.bkappt{
+    text-align: right; 
+    font-size: 16px;
+    height: -65px; 
+    margin-right: 120px;   
+    margin-bottom: 50px;
+    margin-top: 30px;     
+}
+
+.bkappt:hover{
+    cursor: pointer;
+    color: #af3e33; 
+}
+
+.joint{
+    width: 150px; /* Adjust this value to reduce the button size */
+    padding: 8px; /* Adjust padding for better fit */
+    font-size: 12px; /* Adjust font size as needed */
+    height: 35px; /* Adjust height for better fit */
+    position: relative;
+}
+/* footer */
+.footer{
+    text-align: center;
+}
+.sub{
+    font-size: 15px;
+    color: #1e1e1e;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 2px;  
+    border-top: 2px solid rgba(30, 30, 30, 0.2); 
+    padding-top: 20px;
+}
+
+.subsub{
+    font-size: 10px;
+    color: #1e1e1e;
+    text-align: center;
+    margin-top: 5px;
+    
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;   
+}
+
+.container:focus{
+    opacity: 1;
+}
+
+.input{
+    padding: 10px;
+    font-size: 16px;
+    width: 150px;
+    height: 20px;
+}
+
+.join{
+    width: 210px;
+    padding: 10px;
+    font-size: 16px;
+    height: 45px; 
+}
+
+.join:hover{
+    cursor: pointer;
+    background-color: #af3e33;
+}
+.copyright {
+    font-size: 12px;
+    color: #777;
+    margin-top: 10px;
+}
