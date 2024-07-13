@@ -14,7 +14,7 @@
   <body>
     <main class="main">
       <img class="logo" src="../images/mail.png" alt="Logo" style="width: 200px; height: auto" />
-      <div>
+      <!-- <div>
         <nav>
           <ul class="links">
             <li class="link-item"><a class="link" href="../templates/landingpage.html">HOME</a></li>
@@ -23,53 +23,44 @@
             <li class="link-item"><a class="link" href="../templates/aboutus.html">ABOUT US</a></li>
           </ul>
         </nav>
-      </div>
-      <div>
-        <p class="top">CREATE A NEW ACCOUNT</p>
-      </div>
+      </div> -->
       <div class="tent">
         <div class="left-side">
           <div class="left-content">
-            <div class="button-container">
-              <button class="signin-button google">
-                <svg width="20" height="20" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#4285F4" d="M24 9.5c3.2 0 6 .9 8.3 2.6L38 8.4C34.7 5.9 30.6 4 25.9 4 17.5 4 10.5 9.6 7.6 17.4l7.1 5.5C16.3 15.2 19.8 9.5 24 9.5z"></path>
-                  <path fill="#34A853" d="M9.6 28.7l-7.1 5.5c-2.7-4.5-4.3-9.7-4.3-15.2S1.7 13 4.3 8.6l7.1 5.5c-1.2 2.2-1.9 4.8-1.9 7.6 0 2.8.7 5.4 1.9 7.6z"></path>
-                  <path fill="#FBBC05" d="M38 19H24v-6h14c.2 1.2.4 2.4.4 3.5 0 1.2-.1 2.4-.4 3.5z"></path>
-                  <path fill="#EA4335" d="M24 44c6.5 0 11.9-2.4 16-6.2l-7.1-5.5c-2.2 1.5-4.9 2.4-8 2.4-4.2 0-7.7-2.7-8.9-6.4H9.6L2.5 33.4C5.5 41.2 13.1 46 24 46z"></path>
-                  <path fill="none" d="M0 0h48v48H0z"></path>
-                </svg>
-                Sign in with Google
-              </button>
-              <button class="signin-button apple">
-                <svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    fill="#ffffff"
-                    d="M16.365 1.43C15.074 1.432 13.312 2.374 12.436 2.374 11.559 2.374 10.1 1.43 8.714 1.43 6.203 1.43 4 3.682 4 7.314c0 2.907 1.15 5.932 2.564 7.878 1.182 1.582 2.234 2.947 3.812 2.947h.002c1.472 0 2.064-.962 3.86-.97 1.795-.008 2.314.97 3.787.97 1.576 0 2.671-1.338 3.823-2.92C22.807 14.467 24 11.467 24 7.817 24 4.213 21.375 1.43 19.44 1.43c-1.5 0-2.545 1.025-3.077 1.025-.544 0-1.284-1.025-2.087-1.025-.004 0-.004 0-.004 0zM14.123 3.545c.704-.865 1.21-2.084 1.21-3.304 0-.01-.002-.02-.002-.03-.967.041-2.145.67-2.85 1.537-.651.808-1.237 2.022-1.237 3.24.002.02.004.04.004.06 1.024-.04 2.247-.674 2.875-1.503z"
-                  ></path>
-                </svg>
-                Sign in with Apple
-              </button>
+            <div>
+              <p class="top">SIGN IN</p>
+            </div>
+            <form class="login">
+              <input class="inPut" type="text" placeholder="USERNAME/EMAIL" />
+              <!-- <input class="inPut" placeholder="EMAIL ADDRESS" /> -->
+              <input class="inPut" type="password" placeholder="PASSWORD" />
+            </form>
+            <div class="bkappt">
+              <button class="joint">SIGN IN</button>
             </div>
           </div>
         </div>
         <div class="right-side">
           <div class="right-content">
             <div class="content">
+              <div>
+                <p class="top">CREATE A NEW ACCOUNT</p>
+              </div>
               <form class="login">
-                <input class="inPut" placeholder="USERNAME" />
-                <input class="inPut" placeholder="EMAIL ADDRESS" />
-                <input class="inPut" placeholder="PASSWORD" />
+                <input class="inPut" type="text" placeholder="FULL NAME" />
+                <input class="inPut" type="text" placeholder="USERNAME" />
+                <input class="inPut" type="email" placeholder="EMAIL ADDRESS" />
+                <input class="inPut" type="password" placeholder="PASSWORD" />
               </form>
+              <div class="bkappt">
+                <button class="joint">SIGN UP</button>
+              </div>
               <p class="term-sub">
-                By submitting the form, you agree to the <span class="terms-link"><a class="terms" href="/home">Terms of Service</a></span>
+                By submitting the form, you agree to the <span class="terms-link"><a class="terms" href="#">Terms of Service</a></span>
               </p>
             </div>
           </div>
         </div>
-      </div>
-      <div class="bkappt">
-        <button class="joint">SIGN UP</button>
       </div>
     </main>
 

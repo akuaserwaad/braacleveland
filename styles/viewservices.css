@@ -1,231 +1,100 @@
 /* base styles */
 @keyframes fade-in {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
 }
 
-body{
-    font-family: 'Roboto',sans-serif;
-    color: #fff;
-    height: 100vh;
-}
 /* header */
-
-.logo{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-.links{
-    list-style: none;
-    display: flex;
+.links {
+  list-style: none;
+  display: flex;
 }
-.link{
-    text-decoration:none;
-    color: rgba(30, 30, 30, 0.5);
-    font-weight: 500px;
-    font-size: 14px;
-    transition: all 0.4s;
-
+.link {
+  text-decoration: none;
+  color: rgba(30, 30, 30, 0.5);
+  font-weight: 500px;
+  font-size: 14px;
+  transition: all 0.4s;
 }
 
 .link:hover {
-    color: rgba(175, 62, 51, 1);  
+  color: rgba(175, 62, 51, 1);
 }
 
-.link-item{
-    margin-right: 25px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.link-item {
+  margin-right: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 
 /* MAIN */
-
-.main{
-    text-align: center;
+.content {
+  margin-left: 2rem;
 }
 
 .content-wrapper {
-    display: flex; /* Use flexbox layout for inline positioning */
-    align-items: center; /* Vertically align items */
+  display: flex; /* Use flexbox layout for inline positioning */
+  color: #1e1e1e;
 }
 
-.checkboxes {
-    flex-grow: 1; /* Allow checkboxes to take up remaining space */
+.head {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-.photocrop{
+ul {
+  margin-left: 20px;
+  padding-left: 10px;
+}
 
-    width: 50%;
-    text-align: right;  
-    padding-right: 120px;
+li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.photocrop {
+  width: 50%;
+  text-align: right;
+  padding-left: 250px;
 }
 
 .photo {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
-
-/* Hide the default checkbox */
-.custom-checkbox input[type="checkbox"] {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    margin-left: 0px;
-    height: 25px; /* Height of the checkbox */
-    width: 25px; /* Width of the checkbox */
-}
-
-/* Create a custom checkbox */
-.custom-checkbox {
-    display: flex;
-    position: relative;
-    padding-left: 50px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 15px;
-    user-select: none;
-    color: #000;
-    line-height: 25px; 
-    align-items: center;
-    margin-left: 120px;
-}
-
-/* Adjust spacing between checkbox and label */
-.custom-checkbox span {
-    margin-left: 10px; /* Adjust this value to reduce space */
-}
-
-/* Create the checkmark/indicator (hidden when not checked) */
-.custom-checkbox .checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    border: 1px solid #ccc; /* Border around the checkbox */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Drop shadow */
-    border-radius: 4px; /* Rounded corners for the checkbox container */
-    background-color: #eee;
-}
-
-/* On mouse-over, add a grey background color */
-.custom-checkbox:hover input ~ .checkmark {
-    background-color: #ccc;
-}
-
-/* When the checkbox is checked, add a blue background */
-.custom-checkbox input:checked ~ .checkmark {
-    background-color: #af3e33;
-}
-
-/* Create the checkmark/indicator (hidden when not checked) */
-.custom-checkbox .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-}
-
-/* Show the checkmark when checked */
-.custom-checkbox input:checked ~ .checkmark:after {
-    display: block;
-}
-
-/* Style the checkmark/indicator */
-.custom-checkbox .checkmark:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 2px 2px 0;
-    transform: rotate(45deg);
-}
-
-.bkappt{
-    text-align: right; 
-    font-size: 16px;
-    height: -85px; 
-    margin-right: 120px;   
-    margin-bottom: 100px;
-    margin-top: 60px;
-}
-.joint{
-    width: 150px; /* Adjust this value to reduce the button size */
-    padding: 8px; /* Adjust padding for better fit */
-    font-size: 12px; /* Adjust font size as needed */
-    height: 35px; /* Adjust height for better fit */
-    position: relative;
-}
-
-
-.bkappt:hover{
-    cursor: pointer;
-    color: #af3e33; 
-}
-
 
 /* footer */
-.footer{
-    text-align: center;
-    margin-top: 80px;  
+.footer {
+  text-align: center;
+  margin-top: 80px;
 }
-.sub{
-    font-size: 15px;
-    color: #1e1e1e;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 10px;  
-    border-top: 2px solid rgba(30, 30, 30, 0.2); 
-    padding-top: 10px;
-}
-
-.subsub{
-    font-size: 10px;
-    color: #1e1e1e;
-    text-align: center;
-    margin-top: 5px;
-    
+.sub {
+  font-size: 15px;
+  color: #1e1e1e;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-top: 2px solid rgba(30, 30, 30, 0.2);
+  padding-top: 10px;
 }
 
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;   
-}
-
-.container:focus{
-    opacity: 1;
-}
-
-.input{
-    padding: 10px;
-    font-size: 16px;
-    width: 150px;
-    height: 20px;
-}
-
-.join{
-    width: 210px;
-    padding: 10px;
-    font-size: 16px;
-    height: 45px; 
-  
-}
-
-.join:hover{
-    cursor: pointer;
-    background-color: #af3e33;
-}
 .copyright {
-    font-size: 12px;
-    color: #777;
-    margin-top: 10px;
+  font-size: 12px;
+  color: #777;
+  margin-top: 10px;
 }
