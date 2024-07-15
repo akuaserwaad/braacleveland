@@ -54,7 +54,8 @@ body{
 .top{
     font-size: 20px;
     color: #1e1e1e;
-    margin-bottom: 5px;
+    margin-bottom: 20px;        
+    margin-top: 50px;
 }
 
 .subtop{
