@@ -16,76 +16,15 @@ body {
     background-color: #fff;
 }
 
-/* Header */
-.signin {
-    text-align: right;
-}
-
 .logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.links {
-    list-style: none;
-    display: flex;
-}
-
-.link {
-    text-decoration: none;
-    color: rgba(30, 30, 30, 0.5);
-    font-weight: 500; /* Fixed font-weight */
-    font-size: 14px;
-    transition: all 0.4s;
-}
-
-.link:hover {
-    color: rgba(175, 62, 51, 1);
-}
-
-.link-item {
-    margin-right: 25px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.signin {
-    margin-right: 20px;
-    margin-top: 8px;
-}
-
-/* Main */
 .main {
     text-align: center;
 }
-
-.links {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-  }
-  .link {
-    text-decoration: none;
-    color: rgba(30, 30, 30, 0.5);
-    font-weight: 500;
-    font-size: 14px;
-    transition: all 0.4s;
-  }
-  
-  .link:hover {
-    color: rgba(175, 62, 51, 1);
-  }
-  
-  .link-item {
-    margin-right: 25px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
 
 .greeting {
     font-size: 20px;
@@ -97,13 +36,6 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-
-.greetsub {
-    font-size: 10px;
-    color: #1e1e1e;
-    text-align: center;
-    margin-top: 5px;
 }
 
 .content-wrapper {
@@ -182,25 +114,25 @@ body {
 .bkappt {
     text-align: right;
     font-size: 16px;
-    height: -65px;
     margin-right: 120px;
     margin-bottom: 50px;
     margin-top: 30px;
-  }
-  
-  .bkappt:hover {
-    cursor: pointer;
-    color: #af3e33;
-  }
+}
 
-  .joint {
+.joint {
     width: 150px; /* Adjust this value to reduce the button size */
     padding: 8px; /* Adjust padding for better fit */
     font-size: 12px; /* Adjust font size as needed */
     height: 35px; /* Adjust height for better fit */
     position: relative;
     border-radius: 20px;
-  }
+}
+
+/* Add hover effect to change text color */
+.joint:hover {
+    cursor: pointer;
+    color: #af3e33; /* Change text color to #af3e33 */
+}
 
 /* Footer */
 .footer {
@@ -217,45 +149,10 @@ body {
     padding-top: 20px;
 }
 
-.subsub {
-    font-size: 10px;
-    color: #1e1e1e;
-    text-align: center;
-    margin-top: 5px;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.container:focus {
-    opacity: 1;
-}
-
-.input {
-    padding: 10px;
-    font-size: 16px;
-    width: 150px;
-    height: 20px;
-}
-
-.join {
-    width: 210px;
-    padding: 10px;
-    font-size: 16px;
-    height: 45px;
-}
-
-.join:hover {
-    cursor: pointer;
-    background-color: #af3e33;
-}
 .copyright {
     font-size: 12px;
     color: #777;
     margin-top: 10px;
-  }
+}
+
 
