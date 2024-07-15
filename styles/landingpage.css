@@ -1,4 +1,4 @@
-/* base styles */
+/* Base styles */
 @keyframes fade-in {
     0% {
         opacity: 0;
@@ -16,18 +16,6 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-}
-
-.header {
-    display: flex;
-    justify-content: flex-end;
-    padding: 10px 20px;
-}
-
-.signin {
-    margin-right: 20px;
-    margin-top: 8px;
-    text-align: right;
 }
 
 .logo {
@@ -110,5 +98,6 @@ body {
     color: #777;
     margin-top: 10px;
 }
+
 
 

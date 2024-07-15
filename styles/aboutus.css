@@ -1,4 +1,4 @@
-/* base styles */
+/* Base styles */
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -18,22 +18,12 @@ body {
   flex-direction: column;
 }
 
-header {
+.main {
+  flex: 1;
   display: flex;
-  justify-content: flex-end;
-  padding: 10px 20px;
-}
-
-.signin {
-  margin: 0 10px;
-  margin-top: 40px;
-}
-
-.links {
-  display: flex;
-  gap: 1.25rem;
-}
-main {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   max-width: 800px;
   margin: 20px auto;
   background-color: #fff;
@@ -42,17 +32,32 @@ main {
   border-radius: 8px;
 }
 
-.main {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 .logo {
   display: block;
   margin: 20px auto;
+}
+
+.links {
+  display: flex;
+  gap: 1.25rem;
+  list-style: none;
+  padding: 0;
+}
+
+.link-item {
+  display: block;
+}
+
+.link {
+  text-decoration: none;
+  color: rgba(30, 30, 30, 0.5);
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.4s;
+}
+
+.link:hover {
+  color: rgba(175, 62, 51, 1);
 }
 
 .about-us h2 {
@@ -89,3 +94,4 @@ footer {
   color: #777;
   margin-top: 10px;
 }
+
