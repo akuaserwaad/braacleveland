@@ -1,4 +1,4 @@
-/* base styles */
+/* Base styles */
 @keyframes fade-in {
     0% {
         opacity: 0;
@@ -8,69 +8,86 @@
     }
 }
 
-body{
-    font-family: 'Roboto',sans-serif;
-    color: #fff;
+body {
+    font-family: 'Lato', sans-serif;
+    color: #1e1e1e; /* Changed text color to dark */
     height: 100vh;
+    margin: 0;
+    background-color: #fff;
 }
-/* header */
-.signin{
+
+/* Header */
+.signin {
     text-align: right;
 }
 
-.logo{
+.logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-.links{
+
+.links {
     list-style: none;
     display: flex;
 }
-.link{
-    text-decoration:none;
+
+.link {
+    text-decoration: none;
     color: rgba(30, 30, 30, 0.5);
-    font-weight: 500px;
+    font-weight: 500; /* Fixed font-weight */
     font-size: 14px;
     transition: all 0.4s;
-
 }
 
 .link:hover {
-    color: rgba(175, 62, 51, 1);  
+    color: rgba(175, 62, 51, 1);
 }
 
-.link-item{
+.link-item {
     margin-right: 25px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.signin{
+.signin {
     margin-right: 20px;
     margin-top: 8px;
 }
 
-
-
-/* MAIN */
-
-.main{
+/* Main */
+.main {
     text-align: center;
 }
 
-.photocrop{ 
-    
-    width: 90%;
-    height: 400px;
+.links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  .link {
+    text-decoration: none;
+    color: rgba(30, 30, 30, 0.5);
+    font-weight: 500;
+    font-size: 14px;
+    transition: all 0.4s;
+  }
+  
+  .link:hover {
+    color: rgba(175, 62, 51, 1);
+  }
+  
+  .link-item {
+    margin-right: 25px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    overflow: hidden;   
-}
-.greeting{
+  }
+  
 
+.greeting {
     font-size: 20px;
     color: #1e1e1e;
     text-align: center;
@@ -79,64 +96,161 @@ body{
     margin-bottom: 5px;
     display: block;
     margin-left: auto;
-    margin-right: auto;  
+    margin-right: auto;
 }
 
-.greetsub{
-    font-size: 10px;
-    color: #1e1e1e;
-    text-align: center;
-    margin-top: 5px;   
-}
-
-/* footer */
-.footer{
-    text-align: center;
-}
-.sub{
-    font-size: 15px;
-    color: #1e1e1e;
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 2px;  
-    border-top: 2px solid rgba(30, 30, 30, 0.2); 
-    padding-top: 20px;
-}
-
-.subsub{
+.greetsub {
     font-size: 10px;
     color: #1e1e1e;
     text-align: center;
     margin-top: 5px;
-    
 }
 
-.container{
+.content-wrapper {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.checkboxes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    padding-left: 35px;
+    user-select: none;
+    color: #1e1e1e; /* Set text color to dark */
+}
+
+.custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 4px;
+}
+
+.custom-checkbox:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.custom-checkbox input:checked ~ .checkmark {
+    background-color: #af3e33;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.custom-checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.custom-checkbox .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.bkappt {
+    text-align: right;
+    font-size: 16px;
+    height: -65px;
+    margin-right: 120px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+  }
+  
+  .bkappt:hover {
+    cursor: pointer;
+    color: #af3e33;
+  }
+
+  .joint {
+    width: 150px; /* Adjust this value to reduce the button size */
+    padding: 8px; /* Adjust padding for better fit */
+    font-size: 12px; /* Adjust font size as needed */
+    height: 35px; /* Adjust height for better fit */
+    position: relative;
+    border-radius: 20px;
+  }
+
+/* Footer */
+.footer {
+    text-align: center;
+}
+
+.sub {
+    font-size: 15px;
+    color: #1e1e1e;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 2px;
+    border-top: 2px solid rgba(30, 30, 30, 0.2);
+    padding-top: 20px;
+}
+
+.subsub {
+    font-size: 10px;
+    color: #1e1e1e;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;   
+    gap: 10px;
 }
 
-.container:focus{
+.container:focus {
     opacity: 1;
 }
 
-.input{
+.input {
     padding: 10px;
     font-size: 16px;
     width: 150px;
     height: 20px;
 }
 
-.join{
+.join {
     width: 210px;
     padding: 10px;
     font-size: 16px;
-    height: 45px; 
+    height: 45px;
 }
 
-.join:hover{
+.join:hover {
     cursor: pointer;
     background-color: #af3e33;
 }
+
