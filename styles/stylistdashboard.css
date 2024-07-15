@@ -253,4 +253,9 @@ body {
     cursor: pointer;
     background-color: #af3e33;
 }
+.copyright {
+    font-size: 12px;
+    color: #777;
+    margin-top: 10px;
+  }
 
