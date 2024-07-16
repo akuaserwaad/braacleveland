@@ -1,0 +1,341 @@
+/* Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  font-family: 'Nunito Sans', sans-serif;
+  line-height: 1.5;
+}
+
+p,
+ul {
+  font-size: 1.15rem;
+}
+
+/* Header Styles */
+header {
+  background-color: #004d4d;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+header h1 {
+  margin: 0;
+  color: #fff;
+  text-shadow: 3px 3px 30px #727272;
+}
+
+header nav {
+  position: relative;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #ddd;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Heading Styles */
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Main Page Styles */
+.main-page {
+  display: flex;
+  padding: 0;
+  height: 95%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logo {
+  display: block;
+  width: 200px;
+  height: 190px;
+  margin: 20px auto;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.link-item {
+  margin: 0 15px;
+}
+
+.link {
+  text-decoration: none;
+  color: rgba(30, 30, 30, 0.5);
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.4s;
+}
+
+.link:hover {
+  color: rgba(175, 62, 51, 1);
+}
+
+.image-container {
+  width: 100%;
+  height: auto;
+}
+
+.cover-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+  color: #004d4d;
+}
+
+.hero-span {
+  color: #af3e33;
+}
+
+.hero .container h2 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+.hero .container p {
+  font-size: 1.25rem;
+  margin: 1rem 0;
+}
+
+/* Button Styles */
+.project-repo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.15rem;
+  margin: 1rem 0 2rem 0;
+}
+
+.hero-btn {
+  background-color: #af3e33;
+  color: #fff;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1.25rem;
+  padding: 0.75rem 1.5rem;
+  transition: background-color 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hero-btn:hover {
+  background-color: #da5f54;
+}
+
+#hero-btn-1 {
+  background-color: #fff;
+  color: #af3e33;
+}
+
+#hero-btn-1:hover {
+  background-color: #af3e33;
+  color: #fff;
+}
+
+/* Container Styles */
+section {
+  padding: 4rem 1rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* About Section Styles */
+.about {
+  background-color: #fff;
+  color: #1f2937;
+}
+
+.about-description {
+  font-size: 1.25rem;
+}
+
+/* Features Section Styles */
+.features {
+  background-color: #e5e7eb;
+  color: #1f2937;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1rem 5rem;
+}
+
+.features-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.feature-desc {
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  background-color: #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.features-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.features-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.features-description {
+  font-size: 1.25rem;
+}
+
+/* Contact Section Styles */
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-container {
+  display: flex;
+  gap: 3rem;
+}
+
+.contact-card {
+  align-items: center;
+  background-color: #f8f8f8;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  height: 380px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.2rem;
+  padding: 60px 20px;
+  width: 100%;
+}
+
+.contact-icon {
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+}
+
+.contact-role {
+  font-size: 1.15rem;
+  font-style: italic;
+  text-align: center;
+}
+
+.contact-us {
+  font-size: 1.25rem;
+  color: #af3e33;
+  font-style: italic;
+  text-align: center;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  background: #f8f8f8;
+  padding: 1rem 0;
+  color: #333;
+}
+
+.photocrop {
+  width: 100%;
+}
+
+.photo {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+}
+
+.greeting {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.greeting span {
+  font-weight: bold;
+}
+
+.greetsub {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.sub {
+  font-size: 12px;
+  margin: 20px 0;
+}
+
+.hero-header {
+  text-align: center;
+}

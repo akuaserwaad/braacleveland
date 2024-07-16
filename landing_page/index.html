@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="HairMaster Landing Page." />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="../images/IMG_7029.png" type="image/x-icon" />
+    <title>HairMaster</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;800;900&display=swap" />
+  </head>
+  <body>
+    <main>
+      <section class="main-page">
+        <div class="image-container">
+          <img class="logo" src="../images/mail.png" alt="Logo" />
+          <nav>
+            <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+            <ul class="links" id="nav-links">
+              <li class="link-item"><a class="link" href="#about">ABOUT</a></li>
+              <li class="link-item"><a class="link" href="#features">FEATURES</a></li>
+              <li class="link-item"><a class="link" href="#contact">CONTACT US</a></li>
+            </ul>
+          </nav>
+          <div class="photocrop">
+            <img class="photo" src="../images/hairimg.jpg" alt="photo" />
+          </div>
+        </div>
+        <div class="hero-header">
+          <p class="greeting">WELCOME TO THE <span class="hero-span">HAIRMASTER EXPERIENCE</span></p>
+          <p class="greetsub">SIMPLE, REALISTIC AND SCIENCE-BASED HAIRCARE</p>
+        </div>
+        <div class="buttons">
+          <button class="hero-btn" id="hero-btn-1" onclick="location.href='#'">Try the App</button>
+          <button class="hero-btn" onclick="location.href='#'">View Repository</button>
+        </div>
+      </section>
+
+      <section id="features" class="features">
+        <h2 class="features-header">Features</h2>
+        <div class="features-container">
+          <div class="feature-desc">
+            <img class="features-img" loading="lazy" src="../images/feature_1.png" alt="features" />
+            <h2 class="features-title">Stylist DashBoard</h2>
+            <p class="features-description">HR managers can easily add new employees to the system, keeping track of essential details such as name and contact information.</p>
+          </div>
+          <div class="feature-desc">
+            <img class="features-img" loading="lazy" src="../images/feature_2.png" alt="features" />
+            <h2 class="features-title">Appointment Booking</h2>
+            <p class="features-description">HR managers can quickly access a searchable list of all employees, making it easy to find and manage employee information.</p>
+          </div>
+          <div class="feature-desc">
+            <img class="features-img" loading="lazy" src="../images/feature_3.png" alt="features" />
+            <h2 class="features-title">View Services</h2>
+            <p class="features-description">Employees are automatically checked-in and out when they login and out of the system, ensuring accurate records of working hours.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="container">
+          <h2>About Us</h2>
+          <p class="about-description">
+            NextCorp is dedicated to providing the best solutions for how small corporations manage their employees' data. Our all-in-one employee management system is designed to streamline HR
+            processes, making it easier for organizations to handle employee information efficiently. This project was inspired by how organizations especially small corps, still used manual
+            attendance systems. We then asked ourselves <strong><em>"How about creating a smart, automated checker system for employee attendance?"</em></strong>
+            The simplicity and potential impact of the idea immediately resonated with all of us. We then realized this could solve a common problem in many businesses.
+          </p>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <h2 class="features-header">Meet the Team</h2>
+        <div class="contact-container container">
+          <div class="contact-card">
+            <h2 class="contact-title">Akua Serwaa Dankwah</h2>
+            <p class="contact-role">- Founder & Front-end Engineer</p>
+            <div class="socials">
+              <a href="https://www.linkedin.com/in/soufiane-sadgali/" target="_blank"><img class="contact-icon" src="../images/linkedin_icon.png" alt="linkedin_icon" /></a>
+              <a href="https://github.com/BitByteBender" target="_blank"><img class="contact-icon" src="../images/github_icon.png" alt="github_icon" /></a>
+              <a href="https://twitter.com/BitByteBender" target="_blank"><img class="contact-icon" src="../images/twitter_icon.png" alt="twitter_icon" /></a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <h2 class="contact-title">Obed Quartey</h2>
+            <p class="contact-role">- Co-Founder & Back-end Architect.</p>
+            <div class="socials">
+              <a href="https://www.linkedin.com/in/cleveland-ataafi/" target="_blank"><img class="contact-icon" src="../images/linkedin_icon.png" alt="linkedin_icon" /></a>
+              <a href="https://github.com/thatguykwameC" target="_blank"><img class="contact-icon" src="../images/github_icon.png" alt="github_icon" /></a>
+              <a href="https://twitter.com/thatguykwameC" target="_blank"><img class="contact-icon" src="../images/twitter_icon.png" alt="twitter_icon" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-us">Contact us at +000000000 or hairmaster@bus.com</div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <p class="sub">Sign up to receive exclusive haircare, visual and written content, get first dibs on discounts/specials, and appointment slots</p>
+      </div>
+      <p class="copyright">&copy; HairMaster 2024</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
