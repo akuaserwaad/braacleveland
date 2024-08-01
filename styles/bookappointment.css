@@ -153,17 +153,18 @@ li {
   margin-top: 30px;
 }
 
-.bkappt:hover {
-  cursor: pointer;
-  color: #af3e33;
-}
-
 .joint {
+  cursor: pointer;
+  border-radius: 0.5rem;
   width: 150px;
   padding: 8px;
   font-size: 12px;
-  height: 35px;
+  height: 50px;
   position: relative;
+}
+
+.joint:hover {
+  color: #af3e33;
 }
 
 /* Footer */
